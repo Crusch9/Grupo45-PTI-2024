@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumidor App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <header class="app-header">
+      <h1>Resumidor App</h1>
+    </header>
+
+    <nav class="app-menu">
+      <button class="menu-item active" id="homeButton">Home</button>
+      <button class="menu-item" id="aboutButton">Sobre</button>
+      <button class="menu-item" id="contactButton">Contato</button>
+    </nav>
+
+    <main class="app-main">
+      <div id="homeScreen" class="screen active">
+        <p>Digite o texto abaixo para gerar um resumo:</p>
+        <textarea id="inputText" placeholder="Digite aqui..."></textarea>
+        <button id="summarizeButton">Resumir</button>
+        
+        <div id="outputSection">
+          <h2>Resumo:</h2>
+          <div id="outputText">O resumo aparecerá aqui.</div>
+
+          
+          <div class="actions">
+            <button id="shareButton">Compartilhar</button>
+            <button id="generateAnotherButton">Gerar Outra Versão</button>
+            <button id="savePdfButton">Salvar em PDF</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="aboutScreen" class="screen">
+        <h2>Sobre</h2>
+        <p>Este aplicativo foi criado para a facilitar a revisão de textos, resumindo as informações principais de forma objetiva.</p>
+      </div>
+
+      <div id="contactScreen" class="screen">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco pelo e-mail: suporte@resumidorapp.com.</p>
+      </div>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
